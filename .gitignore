@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual Environment
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Project specific
+data
+models/
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.csv
+mlruns
+models
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# pdm
+pdm.*
+.pdm-python
+
+# pyproject.toml
+pyproject.toml
+
