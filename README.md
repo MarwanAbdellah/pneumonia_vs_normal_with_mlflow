@@ -15,11 +15,15 @@ This project trains and evaluates a **DenseNet121 (CheXNet variant)** model to d
 ```
 pneumonia_vs_normal_with_mlflow/
 ├── Notebooks/
-│   ├── Preprocessing.ipynb
-│   ├── train.ipynb
-├── results/
-│   └── checkpoint-XXXX/  # Checkpoints saved during training
-├── models/               # Optional: saved final model
+│   ├── Preprocessing/
+│       ├── Data_Resizing.ipynb
+│       ├── label_encoder.ipynb
+│   ├── train/
+│       ├── alex_net.ipynb
+│       ├── chex_net.ipynb
+│       ├── dense_net.ipynb
+│       ├── Loading_data.ipynb   
+├── models/
 ├── train_preprocessed.csv
 ├── README.md
 ├── .gitignore
@@ -31,7 +35,7 @@ pneumonia_vs_normal_with_mlflow/
 ## 🧪 Key Features
 
 - ✅ Binary image classification (Normal vs. Pneumonia)
-- 🧠 DenseNet121 architecture with grayscale input
+- 🧠 DenseNet121, DenseNet201 and Alexnet architectures with grayscale input
 - 🧼 Data preprocessing and stratified splitting
 - 📈 MLflow logging for metrics, loss curves, and F1 scores
 - 🧠 Early stopping to prevent overfitting
